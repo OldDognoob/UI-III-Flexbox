@@ -48,12 +48,10 @@ table {
 }
 
 /* Set every element's box-sizing to border-box */
-* {
-    box-sizing: border-box;
-}
+
 
 html, body {
-    height: 100%;
+   
     font-family: 'Titillium Web', sans-serif;
 }
 
@@ -64,3 +62,81 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+
+* {
+	box-sizing: border-box;
+}
+
+html{
+	border:2px solid red;
+	width:80%;
+	margin: 0 auto;
+}
+
+.navigation {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap:no wrap;
+}
+
+nav{
+	width: 40%;
+}
+
+nav > ul {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: 
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+}
+
+.img logo {
+
+
+}
+.introduction {
+	border-top: 50px;
+	margin-bottom: 80px;
+	justify-content: space-between;
+
+}
+.middle-content{
+	display: flex;
+	justify-content: space-around;
+		
+}
+.content1 {
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Turret Road';
+  font-size: 45px;
+  margin: 0 50 0 0;
+  border-block: row;
+}
+
+.content2 {
+	text-align: center;
+	display: flex;
+	justify-content: space-around;
+	font-family: 'Playfair Display';
+	font-size: 45px;
+	margin: 0 30 0 0;
+}
+footer{
+  line-height: 30px;
+  font-size-adjust: none;
+  font-family: 'Franklin Gothic Medium';
+  
+}
+.copyright {
+  text-align: center
+}
+
+

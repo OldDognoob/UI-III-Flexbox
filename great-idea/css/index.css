@@ -31,9 +31,7 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
 }
-ol, ul {
-	list-style: none;
-}
+
 blockquote, q {
 	quotes: none;
 }
@@ -65,43 +63,61 @@ h1, h2, h3, h4, h5 {
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
-
-* {
-	box-sizing: border-box;
-}
-
-html{
-	border:2px solid red;
-	width:80%;
+body{
+	width:100%;
 	margin: 0 auto;
+	width: 850px;
+	box-sizing: border-box;
 }
 
 .navigation {
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
-	flex-wrap:no wrap;
+	padding: 20px; 
+	margin: 30px;
 }
 
 nav{
-	width: 40%;
+	width: 50%;
+	text-decoration: none;
+	color: grey;
 }
 
-nav > ul {
-	display: flex;
-	justify-content: space-between;
-	flex-direction: 
-}
+.img logo {
+	display: inline-block;
+	position: relative;
+	top: 20px;
+	margin-left: 50px;
+	padding: 10px;
+ }
 
+a {
+	text-decoration: none;
+	  color: gray;
+	  margin-right: 10px;  
+	  display: inline-flex;
+	  justify-content: space-between;
+  }
+	
 header {
 	display: flex;
 	justify-content: space-between;
 }
-
-.img logo {
-
-
+.inovation {
+	display: flex;
+	justify-content: space-between;
+	font-size: 40px;
+	padding: 20px;
+  }
+button {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	margin: 25px auto;
+	padding: 10px;
 }
+
 .introduction {
 	border-top: 50px;
 	margin-bottom: 80px;
@@ -109,39 +125,51 @@ header {
 
 }
 .middle-content{
+	box-sizing: border-box;
 	display: flex;
 	justify-content: space-around;
 		
 }
+.middle-image {
+	display: block;
+	box-sizing: border-box;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+
+}
 .content1 {
   text-align: center;
-  display: flex;
-  justify-content: space-between;
+  display: inline-block;
+  box-sizing: border-box;
   font-family: 'Turret Road';
   font-size: 45px;
-  margin: 0 50 0 0;
-  border-block: row;
+  margin: 50px;
+  padding: 200px;
+  
 }
 h2 {
 	display: flex;
 	justify-content: space-around;
 }
 .content2 {
-	text-align: center;
-	display: flex;
-	justify-content: space-around;
-	font-family: 'Playfair Display';
-	font-size: 45px;
-	margin: 0 30 0 0;
+	box-sizing: border-box;
+	display:inline-block;
+	width: 250px;
+	height: 100px;
+	padding: 30 30 0 0;
+	
 }
 footer{
-  line-height: 30px;
-  font-size-adjust: none;
-  font-family: 'Franklin Gothic Medium';
-  
+  line-height: 20px;
+  margin-bottom: 10px;
+  shape-rendering: geometricPrecision;
+  text-shadow: 10px;
 }
 .copyright {
-  text-align: center
+	text-align: center;
+	margin-bottom: 50px;
+
 }
 
 

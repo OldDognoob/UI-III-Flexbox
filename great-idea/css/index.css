@@ -52,7 +52,9 @@ table {
 
 html, body {
    
-    font-family: 'Titillium Web', sans-serif;
+	font-family: 'Titillium Web', sans-serif;
+	box-sizing: content-box;
+	flex-flow: column;
 }
 
 h1, h2, h3, h4, h5 {
@@ -120,7 +122,10 @@ header {
   margin: 0 50 0 0;
   border-block: row;
 }
-
+h2 {
+	display: flex;
+	justify-content: space-around;
+}
 .content2 {
 	text-align: center;
 	display: flex;

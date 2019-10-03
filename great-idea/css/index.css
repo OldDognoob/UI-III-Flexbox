@@ -19,7 +19,7 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
+	font-size: 50%;
 	font: inherit;
 	vertical-align: baseline;
 }
@@ -42,7 +42,7 @@ q:before, q:after {
 }
 table {
 	border-collapse: collapse;
-	border-spacing: 0;
+	border-spacing: 15px;
 }
 
 /* Set every element's box-sizing to border-box */
@@ -64,9 +64,10 @@ h1, h2, h3, h4, h5 {
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
 body{
-	width:100%;
+	width:60%;
 	margin: 0 auto;
-	width: 850px;
+	height:10px;
+	width: 900px;
 	box-sizing: border-box;
 }
 
@@ -85,59 +86,52 @@ nav{
 }
 
 .img logo {
-	display: inline-block;
-	position: relative;
-	top: 20px;
-	margin-left: 50px;
-	padding: 10px;
+	display: inline-block;	
  }
 
 a {
 	text-decoration: none;
 	  color: gray;
-	  margin-right: 10px;  
+	  margin-left: 20px;  
 	  display: inline-flex;
 	  justify-content: space-between;
   }
 	
 header {
 	display: flex;
-	align-items: flex-start;
-	justify-content: space-between;
+	flex-wrap: wrap;
+	
+		
 }
 .inovation {
 	display: flex;
 	justify-content: space-between;
-	font-size: 40px;
-	padding: 20px;	
+	font-size: 14px;
+	padding: 10px;	
   }
 button {
 	display: flex;
-	align-items: center;
+	align-items: left;
 	justify-content: space-around;
 	margin: 20px auto;
 	padding: 10px;
 	
 }
 .middle-content{
-	box-sizing: border-box;
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
 	padding: 50px;
 	margin: 0 auto;		
+	text-align: center;
 }
-.middle-image {
-	display: block;
-	width: 70%;
-	padding: 30px;
-	height: 20px;
 }
 .content1 {
   display: flex;
   justify-content: space-around;
   margin: 50px;
   padding: 100px;
+  vertical-align: 
   
 }
 .content2 {
@@ -147,16 +141,20 @@ button {
 	text-align: center;
 	position: relative;	
 }
+.content3 {
+	display: inline-block;
+}
 footer{
   line-height: 20px;
-  margin: 30px;
-  padding: 30px;
+  margin-right: 10px;
+  padding: 20px;
   height: 20px;
   color: black;
 }
-address{
-	line-height: 40px;
-	text-align: left;
+.img {
+	display: flex;
+	justify-content: flex-end;
+	background-position: 0 0 0 50% 0 80%;
 }
 .copyright {
 	text-align: center;

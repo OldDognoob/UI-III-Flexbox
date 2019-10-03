@@ -3,7 +3,8 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,h2, h3, h4, h5, h6, p, blockquote, pre,
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
@@ -60,6 +61,7 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 15px;
 }
 
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
 body{
 	width:60%;
@@ -73,15 +75,19 @@ body{
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
-	padding: 10px;
+	padding: 20px; 
+	margin: 30px;
 }
-
 
 nav{
 	width: 50%;
 	text-decoration: none;
 	color: grey;
 }
+
+.img logo {
+	display: inline-block;	
+ }
 
 a {
 	text-decoration: none;
@@ -90,49 +96,70 @@ a {
 	  display: inline-flex;
 	  justify-content: space-between;
   }
-
-  header {
-	  display: flex;
-	  justify-content: space-between;
-  }
-
-  .inovation {
-	width:40%;
-	text-align: center;
-
-  }
-
-  .header-img {
-	  width:40%;
-  }
-
-.middle-content {
+	
+header {
 	display: flex;
 	flex-direction: column;
+	
+		
 }
-
+.inovation {
+	display: flex;
+	justify-content: space-between;
+	font-size: 14px;
+	padding: 10px;	
+  }
+button {
+	display: flex;
+	align-items: left;
+	justify-content: space-around;
+	margin: 20px auto;
+	padding: 10px;
+	
+}
+.middle-content{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding: 50px;
+	margin: 0 auto;		
+	text-align: center;
+}
+}
 .Content1 {
-	padding: 10px;
-	display: flex;
-	justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  
 }
-
-.Content1 > div {
-	width: 48%;
+.Content > div {
+    width: 20%;
 }
-
 .Content2 {
-	padding: 10px;
-	display: flex;
-	justify-content: space-between;
-}
-
-.Content2 > div {
-	width:30%;
-}
-
-footer {
+	display:inline-block;
 	padding: 20px;
+	margin: 20px;
+	text-align: center;
+	position: relative;	
+}
+.Content3 {
+	display: inline-block;
+}
+footer{
+  line-height: 20px;
+  margin-right: 10px;
+  padding: 20px;
+  height: 20px;
+  color: black;
+}
+.img {
+	display: flex;
+	justify-content: flex-end;
+	background-position: 0 0 0 50% 0 80%;
+}
+.copyright {
+	text-align: center;
+	margin-bottom: 50px;
 }
 
 

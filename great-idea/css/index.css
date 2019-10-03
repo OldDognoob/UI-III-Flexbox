@@ -19,7 +19,7 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
+	font-size: 50%;
 	font: inherit;
 	vertical-align: baseline;
 }
@@ -31,9 +31,7 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
 }
-ol, ul {
-	list-style: none;
-}
+
 blockquote, q {
 	quotes: none;
 }
@@ -44,17 +42,17 @@ q:before, q:after {
 }
 table {
 	border-collapse: collapse;
-	border-spacing: 0;
+	border-spacing: 15px;
 }
 
 /* Set every element's box-sizing to border-box */
-* {
-    box-sizing: border-box;
-}
+
 
 html, body {
-    height: 100%;
-    font-family: 'Titillium Web', sans-serif;
+   
+	font-family: 'Titillium Web', sans-serif;
+	box-sizing: content-box;
+	flex-flow: column;
 }
 
 h1, h2, h3, h4, h5 {
@@ -64,3 +62,103 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+body{
+	width:60%;
+	margin: 0 auto;
+	height:10px;
+	width: 900px;
+	box-sizing: border-box;
+}
+
+.navigation {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	padding: 20px; 
+	margin: 30px;
+}
+
+nav{
+	width: 50%;
+	text-decoration: none;
+	color: grey;
+}
+
+.img logo {
+	display: inline-block;	
+ }
+
+a {
+	text-decoration: none;
+	  color: gray;
+	  margin-left: 20px;  
+	  display: inline-flex;
+	  justify-content: space-between;
+  }
+	
+header {
+	display: flex;
+	flex-wrap: wrap;
+	
+		
+}
+.inovation {
+	display: flex;
+	justify-content: space-between;
+	font-size: 14px;
+	padding: 10px;	
+  }
+button {
+	display: flex;
+	align-items: left;
+	justify-content: space-around;
+	margin: 20px auto;
+	padding: 10px;
+	
+}
+.middle-content{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding: 50px;
+	margin: 0 auto;		
+	text-align: center;
+}
+}
+.content1 {
+  display: flex;
+  justify-content: space-around;
+  margin: 50px;
+  padding: 100px;
+  vertical-align: 
+  
+}
+.content2 {
+	display:inline-block;
+	padding: 50px;
+	margin: 50px;
+	text-align: center;
+	position: relative;	
+}
+.content3 {
+	display: inline-block;
+}
+footer{
+  line-height: 20px;
+  margin-right: 10px;
+  padding: 20px;
+  height: 20px;
+  color: black;
+}
+.img {
+	display: flex;
+	justify-content: flex-end;
+	background-position: 0 0 0 50% 0 80%;
+}
+.copyright {
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+

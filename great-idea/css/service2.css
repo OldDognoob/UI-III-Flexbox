@@ -105,22 +105,6 @@ header {
 	font-size: 14px;
 	padding: 10px;	
   }
-button {
-	display: flex;
-	align-items: left;
-	justify-content: space-around;
-	margin: 20px auto;
-	padding: 10px;
-	
-}
-.middle-content{
-	display: flex;
-    flex-direction: column;
-	align-items: center;
-	padding: 50px;
-	margin: 0 auto;		
-	text-align: center;
-}
 
 .Content1 {
   display: inline-block;
@@ -137,10 +121,7 @@ button {
 	text-align: center;
 	position: relative;	
 }
-.Content3 {
-	display: flex;
-	justify-content: space-between;
-	padding: 10px;
+
 }
 footer{
   line-height: 20px;
@@ -159,11 +140,5 @@ footer{
 	margin-bottom: 50px;
 }
 
-.middle-content{
-	display: inline;
-}
 
-footer{
-	display: flex;
-	flex-flow: 
-}
+

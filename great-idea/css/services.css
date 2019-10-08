@@ -1,9 +1,9 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
 
-html, body, span, applet, object, iframe,
+html, body,  span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
@@ -25,8 +25,8 @@ time, mark, audio, video {
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: flex;
+footer, hgroup, menu, {
+	display: inline-block;
 }
 body {
 	line-height: 1;
@@ -53,12 +53,14 @@ html, body {
 	font-family: 'Titillium Web', sans-serif;
 	box-sizing: content-box;
 	flex-flow: column;
+	
 }
 
 h1, h2, h3, h4, h5 {
     font-family: 'Bangers', cursive;
     letter-spacing: 1px;
-    margin-bottom: 15px;
+	margin-bottom: 15px;
+	
 }
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
@@ -68,15 +70,9 @@ body{
 	margin: 0 auto;
 	height:10px;
 	width: 900px;
-	box-sizing: border-box;	
-}
-
-.navigation {
-	width: 100%;
-	display: flex;
-	justify-content: space-between;
-	padding: 10px; 
-	margin: 10px;
+	padding: 20px 0 0 20px;
+	
+	
 }
 
 nav{
@@ -84,9 +80,6 @@ nav{
 	text-decoration: none;
 	color: grey;
 }
-.img logo {
-	display: inline-block;	
- }
 
 a {
 	text-decoration: none;
@@ -98,25 +91,52 @@ a {
 	
 header {
 	display: flex;
-	flex-direction: column;
-	padding-bottom: 20px;
-	margin-bottom: 20px;
+	flex-direction: column;		
 }
-button{
-	background: white;
-	margin-top: 14px;
-	scroll-margin-bottom: 25px;
-	border: 1px solid black;
-	font-size: 12px;
-	font-family: Georgia, 'Times New Roman', Times, serif;
-	padding-top: 0;
-	padding-right: 16px;
-	padding-bottom: 0;
-	padding-left: 16px;
-	height: 40px;
-	width: 7rem;
-}
-p{
+.inovation {
 	display: flex;
-	flex-direction: wrap;
+	justify-content: space-between;
+	font-size: 14px;
+	padding: 10px;	
+  }
+button {
+	display: flex;
+	align-items: left;
+	justify-content: space-around;
+	margin: 20px auto;
+	padding: 10px;	
 }
+
+.main-content{
+	display: ;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-around;
+	margin: 32%;
+
+}
+
+footer{
+  line-height: 20px;
+  margin-right: 10px;
+  padding: 20px;
+  height: 20px;
+  color: black;
+}
+
+.footer-content{
+	display: flex;
+}
+
+.img {
+	display: flex;
+	justify-content: flex-end;
+	background-position: 0 0 0 50% 0 80%;
+}
+.copyright {
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+
+

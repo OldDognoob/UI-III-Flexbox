@@ -25,7 +25,7 @@ time, mark, audio, video {
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
+footer, hgroup, menu, nav, section {
 	display: flex;
 }
 body {
@@ -68,22 +68,21 @@ body{
 	margin: 0 auto;
 	height:10px;
 	width: 900px;
-	box-sizing: border-box;	
+	padding: 20px 0 0 20px;
+	
 }
-
-.navigation {
-	width: 100%;
+.navigation{
 	display: flex;
-	justify-content: space-between;
-	padding: 10px; 
-	margin: 10px;
-}
+	flex-direction: column;
+	align-items: center;
 
+}
 nav{
 	width: 50%;
 	text-decoration: none;
 	color: grey;
 }
+
 .img logo {
 	display: inline-block;	
  }
@@ -98,25 +97,73 @@ a {
 	
 header {
 	display: flex;
-	flex-direction: column;
-	padding-bottom: 20px;
-	margin-bottom: 20px;
+	flex-direction: column;		
 }
-button{
-	background: white;
-	margin-top: 14px;
-	scroll-margin-bottom: 25px;
-	border: 1px solid black;
-	font-size: 12px;
-	font-family: Georgia, 'Times New Roman', Times, serif;
-	padding-top: 0;
-	padding-right: 16px;
-	padding-bottom: 0;
-	padding-left: 16px;
-	height: 40px;
-	width: 7rem;
-}
-p{
+.inovation {
 	display: flex;
-	flex-direction: wrap;
+	justify-content: space-between;
+	font-size: 14px;
+	padding: 10px;	
+  }
+button {
+	display: flex;
+	align-items: left;
+	justify-content: space-around;
+	margin: 20px auto;
+	padding: 10px;
+	
+}
+.middle-content{
+	display: flex;
+    flex-direction: column;
+	align-items: center;
+	padding: 50px;
+	margin: 0 auto;		
+	text-align: center;
+}
+
+.Content1 {
+  display: inline-block;
+  padding: 10px;
+  
+}
+.Content > div {
+    width: 20%;
+}
+.Content2 {
+	display:inline-block;
+	padding: 20px;
+	margin: 20px;
+	text-align: center;
+	position: relative;	
+}
+.Content3 {
+	display: flex;
+	justify-content: space-between;
+	padding: 10px;
+}
+footer{
+  line-height: 20px;
+  margin-right: 10px;
+  padding: 20px;
+  height: 20px;
+  color: black;
+}
+.img {
+	display: flex;
+	justify-content: flex-end;
+	background-position: 0 0 0 50% 0 80%;
+}
+.copyright {
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+.middle-content{
+	display: inline;
+}
+
+footer{
+	display: flex;
+	flex-flow: 
 }

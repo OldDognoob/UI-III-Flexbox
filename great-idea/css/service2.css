@@ -19,14 +19,14 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 50%;
+	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, hgroup, menu, nav, section {
-	display: flex;
+	display: inline-block;
 }
 body {
 	line-height: 1;
@@ -52,7 +52,7 @@ html, body {
    
 	font-family: 'Titillium Web', sans-serif;
 	box-sizing: content-box;
-	flex-flow: column;
+	
 }
 
 h1, h2, h3, h4, h5 {
@@ -69,12 +69,13 @@ body{
 	height:10px;
 	width: 900px;
 	padding: 20px 0 0 20px;
+	flex-flow: column;
 	
 }
 .navigation{
 	display: flex;
 	flex-direction: column;
-	align-items: center;
+	align-items: baseline;
 
 }
 nav{
@@ -94,11 +95,12 @@ a {
 	  display: inline-flex;
 	  justify-content: space-between;
   }
-	
+
 header {
 	display: flex;
 	flex-direction: column;		
 }
+
 .inovation {
 	display: flex;
 	justify-content: space-between;
@@ -106,23 +108,25 @@ header {
 	padding: 10px;	
   }
 
-.Content1 {
+.main-content{
   display: inline-block;
   padding: 10px;
   
 }
-.Content > div {
-    width: 20%;
-}
-.Content2 {
-	display:inline-block;
-	padding: 20px;
-	margin: 20px;
-	text-align: center;
-	position: relative;	
+.boxes{
+	display: flex;
+	flex-wrap: wrap;
+	align-content: center;
+	justify-content: space-around;
 }
 
+.box1{
+	display: flex;
+	flex-wrap: wrap;
+	align-content: center;
+	align-items: center;
 }
+
 footer{
   line-height: 20px;
   margin-right: 10px;
@@ -137,8 +141,12 @@ footer{
 }
 .copyright {
 	text-align: center;
-	margin-bottom: 50px;
+	align-items: center;
 }
 
-
+p{
+	background: gray;
+	color: black;
+	display: inline-block;
+}
 

@@ -3,7 +3,7 @@
    License: none (public domain)
 */
 
-html, body,  span, applet, object, iframe,
+html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
@@ -25,8 +25,8 @@ time, mark, audio, video {
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
-footer, hgroup, menu, nav, section {
-	display: inline-block;
+footer, header, hgroup, menu, nav, section {
+	display:block;
 }
 body {
 	line-height: 1;
@@ -42,17 +42,19 @@ q:before, q:after {
 }
 table {
 	border-collapse: collapse;
-	border-spacing: 15px;
+	border-spacing: 0;
 }
 
 /* Set every element's box-sizing to border-box */
 
+* {
+  box-sizing: border-box;
+}
 
 html, body {
-   
+    height: 100%;
 	font-family: 'Titillium Web', sans-serif;
-	box-sizing: content-box;
-	flex-flow: column;
+	
 	
 }
 
@@ -66,77 +68,162 @@ h1, h2, h3, h4, h5 {
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
 body{
-	width:60%;
-	margin: 0 auto;
-	height:10px;
+	margin: auto;	
 	width: 900px;
-	padding: 20px 0 0 20px;
-	
-	
 }
 
-nav{
-	width: 50%;
-	text-decoration: none;
+.navigation{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+nav a{
+	margin: 52px 15px 0 40px;
 	color: grey;
+	font-size: 14px;
+	text-decoration: none;
+}
+
+img{
+	max-width: 100%;
+}
+
+p{
+	line-height: 16px;
 }
 
 a {
-	text-decoration: none;
-	  color: gray;
-	  margin-left: 20px;  
-	  display: inline-flex;
-	  justify-content: space-between;
+	 line-height: 35px;
+	 margin-top: 20px;
+	 list-style-position: inside;
   }
-	
+
+.logo{
+	 margin: 20px 0 0 100px;
+	 padding-top: 20px;
+  }
+
 header {
 	display: flex;
-	flex-direction: column;		
-}
-.inovation {
-	display: flex;
-	justify-content: space-between;
-	font-size: 14px;
-	padding: 10px;	
-  }
-button {
-	display: flex;
-	align-items: left;
-	justify-content: space-around;
-	margin: 20px auto;
-	padding: 10px;	
-}
-
-.main-content{
-	display: ;
 	flex-wrap: wrap;
 	align-items: center;
 	justify-content: space-around;
-	margin: 32%;
-
+	margin: 50px 0 50px 0;	
 }
 
-footer{
-  line-height: 20px;
-  margin-right: 10px;
-  padding: 20px;
-  height: 20px;
-  color: black;
+.services{
+	margin: 30px 0 0 30px;
 }
 
-.footer-content{
+ h1{
+	font-size: 24px;
+}
+
+button{
+	margin-top: 20px;
+	font-size: 12px;
+	padding: 7px 20px 7px 20px;
+	border: 1px solid black;
+	border-radius: 5px;
+}
+
+.boxes{
 	display: flex;
+	flex-wrap: wrap;
+	justify-content:space-between;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	margin: 30px;
+	padding-bottom: 40px;
 }
 
-.img {
+.box1{
+	margin: 40px 0 0 0;
+	padding: 20px;
+	background: lightgrey;
+	border: 1px solid black;
+	width: 400px;
+}
+
+.p {
+	line-height: 16px;
+}
+
+.button{
 	display: flex;
-	justify-content: flex-end;
-	background-position: 0 0 0 50% 0 80%;
+	justify-content: space-between;
+	margin: 40px 0 40px 0;
+}
+
+.box2{
+	margin: 40px 0 0 0;
+	padding: 20px;
+	background: lightgrey;
+	border: 1px solid black;
+	width: 400px;
+}
+
+.box3{
+	margin: 40px 0 0 0;
+	padding: 20px;
+	background: lightgrey;
+	border: 1px solid black;
+	width: 400px;
+}
+
+.box4{
+	margin: 40px 0 0 0;
+	padding: 20px;
+	background: lightgrey;
+	border: 1px solid black;
+	width: 400px;
+}
+
+.box5{
+	margin: 40px 0 0 0;
+	padding: 20px;
+	background: lightgrey;
+	border: 1px solid black;
+	width: 400px;
+}
+
+.infoservices{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 30px;
+	width: 400px;
+	
+}
+
+.services-info-img{
+	width: 400px;
+	display: flex;
+	justify-content: space-between;
+	
 }
 .copyright {
 	text-align: center;
-	margin-bottom: 50px;
-}
+	font-size: 14px;
+	margin-top: 50px;
+  }
+
+  address {
+	margin-bottom: 20px;
+
+  }
+
+  footer {
+	margin: 20px 30px 80px 30px;
+  }
+
+  ul{
+	  list-style-type: square;
+	  list-style-position: inside;
+	  line-height: 30px;
+	  margin-top: 20px;
+  }
+
 
 
 

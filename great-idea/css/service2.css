@@ -26,12 +26,11 @@ time, mark, audio, video {
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, hgroup, menu, nav, section {
-	display: inline-block;
+	display: block;
 }
 body {
 	line-height: 1;
 }
-
 blockquote, q {
 	quotes: none;
 }
@@ -63,30 +62,41 @@ h1, h2, h3, h4, h5 {
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
+html, body {
+   
+	font-family: 'Titillium Web', sans-serif;
+	box-sizing: content-box;
+	flex-flow: column;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+
 body{
 	width:60%;
 	margin: 0 auto;
 	height:10px;
 	width: 900px;
-	padding: 20px 0 0 20px;
-	flex-flow: column;
-	
+	box-sizing: border-box;
 }
-.navigation{
-	display: flex;
-	flex-direction: column;
-	align-items: baseline;
 
+.navigation {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	padding: 10px;
 }
+
+
 nav{
 	width: 50%;
 	text-decoration: none;
 	color: grey;
 }
-
-.img logo {
-	display: inline-block;	
- }
 
 a {
 	text-decoration: none;
@@ -96,57 +106,42 @@ a {
 	  justify-content: space-between;
   }
 
-header {
+  
+  .inovation {
+	width:40%;
+	text-align: center;
+
+  }
+.inovation > h1{
 	display: flex;
-	flex-direction: column;		
+	flex-direction: column;
 }
 
-.inovation {
-	display: flex;
-	justify-content: space-between;
-	font-size: 14px;
-	padding: 10px;	
+  .header-img {
+	  width:40%;
   }
 
-.main-content{
-  display: inline-block;
-  padding: 10px;
-  
-}
-.boxes{
+.middle-content {
 	display: flex;
-	flex-wrap: wrap;
-	align-content: center;
-	justify-content: space-around;
+	flex-direction: column;
 }
 
-.box1{
+.Content1 {
+	padding: 10px;
 	display: flex;
-	flex-wrap: wrap;
-	align-content: center;
-	align-items: center;
+	justify-content: space-between;
 }
 
-footer{
-  line-height: 20px;
-  margin-right: 10px;
-  padding: 20px;
-  height: 20px;
-  color: black;
+.Content1 > div {
+	width: 48%;
 }
-.img {
+
+.Content2 {
+	padding: 10px;
 	display: flex;
-	justify-content: flex-end;
-	background-position: 0 0 0 50% 0 80%;
-}
-.copyright {
-	text-align: center;
-	align-items: center;
+	justify-content: space-between;
 }
 
-p{
-	background: gray;
-	color: black;
-	display: inline-block;
+.Content2 > div {
+	width:30%;
 }
-

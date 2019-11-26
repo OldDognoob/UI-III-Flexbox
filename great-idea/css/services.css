@@ -80,8 +80,10 @@ body{
 nav a{
 	margin: 52px 15px 0 40px;
 	color: grey;
-	font-size: 14px;
+	font-size: 18px;
 	text-decoration: none;
+	display: flex;
+	align-items: center;
 }
 
 img{

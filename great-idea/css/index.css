@@ -3,7 +3,8 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,h2, h3, h4, h5, h6, p, blockquote, pre,
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
@@ -18,7 +19,7 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 50%;
+	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
 }
@@ -30,7 +31,9 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
 }
-
+ol, ul {
+	list-style: none;
+}
 blockquote, q {
 	quotes: none;
 }
@@ -41,17 +44,17 @@ q:before, q:after {
 }
 table {
 	border-collapse: collapse;
-	border-spacing: 15px;
+	border-spacing: 0;
 }
 
 /* Set every element's box-sizing to border-box */
-
+* {
+    box-sizing: border-box;
+}
 
 html, body {
-   
-	font-family: 'Titillium Web', sans-serif;
-	box-sizing: content-box;
-	flex-flow: column;
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
 }
 
 h1, h2, h3, h4, h5 {
@@ -60,81 +63,117 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 15px;
 }
 
-
-body{
-	width:60%;
-	margin: 0 auto;
-	height:10px;
-	width: 900px;
-	box-sizing: border-box;
-}
-
-.navigation {
-	width: 100%;
-	display: flex;
-	justify-content: space-between;
-	padding: 10px;
-}
-
-
-nav{
-	width: 50%;
-	text-decoration: none;
-	color: grey;
-}
-
-a {
-	text-decoration: none;
-	  color: gray;
-	  margin-left: 20px;  
-	  display: inline-flex;
-	  justify-content: space-between;
-  }
-
-  header {
-	  display: flex;
-	  justify-content: space-between;
-  }
-
-  .inovation {
-	width:40%;
+h1 {
 	text-align: center;
-
-  }
-.inovation > h1{
-	display: flex;
-	flex-direction: column;
+	font-size: 75px;
+	padding: 0px 20px;
+	margin-bottom: 24px;
 }
 
-  .header-img {
-	  width:40%;
-  }
-
-.middle-content {
-	display: flex;
-	flex-direction: column;
+h2 {
+	font-size: 16px;
+	text-align: left;
 }
 
-.Content1 {
-	padding: 10px;
+p {
+	line-height: 1.1;
+	font-size: 16px;
+	text-align: left;
+}
+
+.container {
+	width: 950px;
+	margin: 0 auto;
+}
+
+header{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+nav {
+	width: 65%;
+	margin: 40px;
 	display: flex;
 	justify-content: space-between;
 }
 
-.Content1 > div {
-	width: 48%;
+nav a {
+	text-decoration: none;
+	color: rgb(173, 172, 173);
+	font-size: 14px;
+	padding: 0px, 5px;
 }
 
-.Content2 {
-	padding: 10px;
+.logo {
+	padding: 20px 40px 20px 20px;;
+}
+
+.top-content {
+	border-bottom: 1px solid black;
+	margin: 30px;;
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-evenly;
 }
 
-.Content2 > div {
-	width:30%;
+.top-content-text {
+	margin: 70px;
+	text-align: center;
 }
 
+.top-content-text a{
+	font-size: 16px;
+	text-align: center;
+	text-decoration: none;
+	color: rgb(173, 172, 173);
+	border: 1px solid black;
+	padding: 5px 45px;
+}
 
+.circleImg {
+	height: 400px;
+	margin-bottom: 65px;
+}
 
+.second-content {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	padding: 10px;
+}
+
+.features, .about {
+	width: calc(50% - 48px);
+}
+
+.middle-img {
+	padding: 25px; 
+	margin-left: 10px;
+}
+.third-content {
+	border-bottom: 1px solid black;
+	display: flex;
+	justify-content: space-evenly;
+	padding: 2px 10px 35px 20px;
+}
+
+.services, .product, .vision {
+	width: calc(33%- 40px);
+	margin: 15px;
+}
+
+.bottom-content {
+	margin: 40px ;
+}
+
+footer {
+	display: flex;
+	justify-content: center;
+	padding: 20px;
+}
+
+footer p{
+	font-size: 14px;
+}
 
